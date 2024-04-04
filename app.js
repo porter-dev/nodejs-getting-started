@@ -9,11 +9,11 @@ app.get('/', (req, res) => {
   })
 })
 
-app.get('/healthz', (req, res)) => {
+app.get('/healthz', (req, res) => {
     res.json({
         "status": "OK"
     })
-}
+})
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
