@@ -18,11 +18,11 @@ jobs:
       timeout-minutes: 30
       run: exec porter apply
       env:
-        PORTER_CLUSTER: "3766"
-        PORTER_DEPLOYMENT_TARGET_ID: f0af103e-aaa8-4fb0-866c-ab5730811c60
-        PORTER_HOST: https://dashboard.getporter.dev
+        PORTER_CLUSTER: "608"
+        PORTER_DEPLOYMENT_TARGET_ID: 9889f3a8-a943-4c69-810f-2aa1cfe25498
+        PORTER_HOST: https://cloud.porter.run
         PORTER_PR_NUMBER: ${{ github.event.number }}
-        PORTER_PROJECT: "9267"
+        PORTER_PROJECT: "610"
         PORTER_STACK_NAME: nodejs-getting-started
         PORTER_TAG: ${{ steps.vars.outputs.sha_short }}
-        PORTER_TOKEN: ${{ secrets.PORTER_STACK_9267_3766 }}
+        PORTER_TOKEN: ${{ secrets.PORTER_STACK_610_608 }}
